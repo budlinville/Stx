@@ -78,7 +78,7 @@ class TradingBotBase():
 
 
     @__requires_auth
-    def create_limit_order(self, market_id, quantity, price, action="BUY", order_type="LIMIT"):
+    def create_order(self, market_id, quantity, price, action="BUY", order_type="LIMIT"):
             print(f"[{market_id}] Creating {order_type} order : {action} {quantity} @ {price}")
             # generate the request params for order creation
             params = {

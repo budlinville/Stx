@@ -14,7 +14,7 @@ def main():
     # f.close()
 
     market_id = list(market_data.keys())[0]
-    order = bot.create_limit_order(market_id, 1, 64, action="BUY", order_type="LIMIT")
+    order = bot.create_order(market_id, 1, 64, action="BUY", order_type="LIMIT")
     print(order['id'])
     bot.cancel_order(order['id'])
 
