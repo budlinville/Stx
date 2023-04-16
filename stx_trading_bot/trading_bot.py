@@ -5,7 +5,8 @@ import random
 
 from stxsdk import StxClient, Selection, StxChannelClient
 from stxsdk.exceptions import AuthenticationFailedException
-from trading_bot.exceptions import MarketsNotFoundException, OrderCreationFailure
+
+from .exceptions import MarketsNotFoundException, OrderCreationFailure
 
 logger = logging.getLogger(__file__)
 

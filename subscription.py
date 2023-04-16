@@ -14,7 +14,7 @@ class StxSubscriptionHandler:
         if 'success' not in self.client.login(params={
             'email': email,
             'password': password,
-        }):
+}):
             raise Exception("Failed to login!")
         
         self.channels = list(CHANNELS)
